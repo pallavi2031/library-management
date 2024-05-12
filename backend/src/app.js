@@ -25,6 +25,8 @@ app.use(
   })
 )
 
+app.get("/", (req, res) => res.send("Express on Vercel"));
+
 app.use("/v1", apiV1)
 
 app.use((req, res) => {
